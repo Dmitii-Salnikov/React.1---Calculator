@@ -1,0 +1,85 @@
+:root {
+	--gap: 15px;
+	--border-radius: 5px;
+	--black-color: #000;
+	--height-of-block: 50px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: -webkit-linear-gradient(90deg, #303f56, #406d8e, #7dadd3);
+	background: linear-gradient(90deg, #3e4653, #406d8e, #7dadd3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+}
+
+.title {
+	font-size: 2rem;
+	cursor: default;
+}
+
+.container {
+	padding: 150px 0;
+	width: 450px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: var(--gap);
+}
+
+.field {
+	width: 100%;
+	height: var(--height-of-block);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 2rem;
+	color: var(--black-color);
+	padding: 5px 15px;
+	background-color: #81c6ff;
+	outline: 2px solid var(--black-color);
+	border-radius: var(--border-radius);
+}
+
+.keypad {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap);
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc((100% - (var(--gap) * 2)) / 3);
+	color: var(--black-color);
+	background-color: #c4e4ff;
+	outline: 2px solid var(--black-color);
+	border: none;
+	font-size: 1.5rem;
+	padding: 25px 0;
+	height: var(--height-of-block);
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	transition: background-color .1s ease-in-out, color .1s ease-in-out;
+}
+
+.button:hover {
+	background-color: #81c6ff;
+}
+
+.button:active {
+	background-color: #388ed4;
+	color: #fff;
+}
