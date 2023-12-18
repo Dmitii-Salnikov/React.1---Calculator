@@ -1,8 +1,10 @@
 :root {
 	--gap: 15px;
 	--border-radius: 5px;
-	--black-color: #000;
 	--height-of-block: 50px;
+	--color-of-expression: #303f56;
+	--black-color: #000;
+	--white-color: #fff;
 }
 
 *,
@@ -24,15 +26,18 @@ body {
 }
 
 .title {
+	letter-spacing: 1.5px;
 	font-size: 2rem;
 	cursor: default;
 }
 
 .container {
-	padding: 150px 0;
-	width: 450px;
+	width: 400px;
+	height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 	gap: var(--gap);
 }
@@ -81,5 +86,5 @@ body {
 
 .button:active {
 	background-color: #388ed4;
-	color: #fff;
+	color: var(--white-color);
 }
