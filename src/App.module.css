@@ -17,8 +17,9 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background: -webkit-linear-gradient(90deg, #303f56, #406d8e, #7dadd3);
-	background: linear-gradient(90deg, #3e4653, #406d8e, #7dadd3);
+
+	background: #1F17E4;
+	background: linear-gradient(135deg, #1F17E4, #A3CBE4);
 	display: flex;
 	justify-content: center;
 	align-items: center;
