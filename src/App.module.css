@@ -56,6 +56,10 @@ body {
 	border-radius: var(--border-radius);
 }
 
+.fieldResult {
+	background-color: #9bff70;
+}
+
 .keypad {
 	width: 100%;
 	display: flex;
